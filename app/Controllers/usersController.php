@@ -14,6 +14,7 @@ class UsersController extends ResourceController
     public function _construct()
     {
         $this->model = $this->setModel(new UserModel());
+        log_message('error', "runed constructor");
     }
 
     /*public function index()

@@ -99,13 +99,13 @@ class Session implements AuthenticatorInterface
         /** @var Security $securityConfig */
         $securityConfig = config('Security');
 
-        if ($securityConfig->csrfProtection === 'cookie') {
+        /*if ($securityConfig->csrfProtection === 'cookie') {
             throw new SecurityException(
                 'Config\Security::$csrfProtection is set to \'cookie\'.'
                     . ' Same-site attackers may bypass the CSRF protection.'
                     . ' Please set it to \'session\'.'
             );
-        }
+        }*/
     }
 
     /**

@@ -1,0 +1,32 @@
+ERROR - 2024-03-24 21:05:15 --> mysqli_sql_exception: Unknown column 'version' in 'field list' in C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mi...', 0)
+#1 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(592): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->addHistory(Object(stdClass), 1)
+#6 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\vendor\codeigniter4\shield\src\Commands\Setup.php(420): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\vendor\codeigniter4\shield\src\Commands\Setup.php(97): CodeIgniter\Shield\Commands\Setup->runMigrations()
+#9 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\vendor\codeigniter4\shield\src\Commands\Setup.php(82): CodeIgniter\Shield\Commands\Setup->publishConfig()
+#10 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Shield\Commands\Setup->run(Array)
+#11 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('shield:setup', Array)
+#12 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\spark(102): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2024-03-24 21:05:48 --> mysqli_sql_exception: Unknown column 'version' in 'field list' in C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mi...', 0)
+#1 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(592): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->addHistory(Object(stdClass), 1)
+#6 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\vendor\codeigniter4\shield\src\Commands\Setup.php(420): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\vendor\codeigniter4\shield\src\Commands\Setup.php(97): CodeIgniter\Shield\Commands\Setup->runMigrations()
+#9 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\vendor\codeigniter4\shield\src\Commands\Setup.php(82): CodeIgniter\Shield\Commands\Setup->publishConfig()
+#10 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Shield\Commands\Setup->run(Array)
+#11 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('shield:setup', Array)
+#12 C:\Users\exsal\TCGSystem\TCGTournamentsApi\vendor\codeigniter4\framework\spark(102): CodeIgniter\CLI\Console->run()
+#13 {main}

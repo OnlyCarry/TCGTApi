@@ -30,14 +30,16 @@ class UsersController extends ResourceController
     public function create()
     {
         try {
+            $userModer = new UserModel();
+
             $user = $this->request->getJSON();
             log_message('error', json_encode($user));
-            if($this->model->save($user)):
+            if($userModer->save($user)):
                 //$user->id = $this->model->insertID();
-                $token = $this->model->generateAccessToken($user->id);
+                $token = $userModer->generateAccessToken($user->id);
                 return $this->respondCreated($token->raw_token);
             else:
-                return $this->failValidationError($this->model->validation->listErrors());
+                return $this->failValidationError($userModer->validation->listErrors());
             endif;
         } catch (\Exception $e) {
             return $this->failServerError('An error has occurred');

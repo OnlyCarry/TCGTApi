@@ -16,7 +16,7 @@ class UsersController extends ResourceController
         $this->model = $this->setModel(new UserModel());
     }
 
-    public function index()
+    /*public function index()
     {
         // Your code here
     }
@@ -24,7 +24,7 @@ class UsersController extends ResourceController
     public function show($id)
     {
         // Your code here
-    }
+    }*/
 
     public function create()
     {
@@ -43,7 +43,7 @@ class UsersController extends ResourceController
         
     }
 
-    public function update($id)
+    /*public function update($id)
     {
         // Your code here
     }
@@ -51,5 +51,5 @@ class UsersController extends ResourceController
     public function delete($id)
     {
         // Your code here
-    }
+    }*/
 }

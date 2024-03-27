@@ -30,7 +30,7 @@ class UsersController extends ResourceController
     {
         try {
             $user = $this->request->getJSON();
-            log_message('error', $user);
+            log_message('error', json_encode($user));
             if($this->model->save($user)):
                 //$user->id = $this->model->insertID();
                 $token = $this->model->generateAccessToken($user->id);

@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\UserModel;
+use App\Models\UsersModel;
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\Shield\Entities\User;
 
@@ -13,7 +13,7 @@ class UsersController extends ResourceController
 
     public function _construct()
     {
-        $this->model = $this->setModel(new UserModel());
+        $this->model = $this->setModel(new UsersModel());
         log_message('error', "runed constructor");
     }
 
@@ -30,7 +30,7 @@ class UsersController extends ResourceController
     public function create()
     {
         try {
-            $userModer = new UserModel();
+            $userModer = new UsersModel();
 
             $user = $this->request->getJSON();
             log_message('error', json_encode($user));
